@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMentor PRO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="MyMentor">
+                <h1>MyMentor PRO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#mentors" class="active">Mentors</a></li>
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="mentors">
+            <h2><i class="fas fa-users"></i> Choose Your Mentor</h2>
+            <div class="mentors-grid" id="mentors-container"></div>
+        </section>
+
+        <section id="goals">
+            <h2><i class="fas fa-bullseye"></i> Your Development Goal</h2>
+            <div class="goal-container">
+                <input type="text" id="goal-input" placeholder="Example: 'Become a Frontend Developer'">
+                <button id="set-goal"><i class="fas fa-check"></i> Set Goal</button>
+            </div>
+            <div class="current-goal" id="current-goal-display"></div>
+        </section>
+
+        <section id="tasks">
+            <h2><i class="fas fa-tasks"></i> Mentor's Tasks</h2>
+            <div class="tasks-container" id="tasks-container"></div>
+            <div class="goal-container add-task">
+                <input type="text" id="new-task" placeholder="Add custom task">
+                <button id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2><i class="fas fa-link"></i> Learning Resources</h2>
+            <div class="goal-container">
+                <input type="text" id="resource-title" placeholder="Resource name">
+                <input type="url" id="resource-url" placeholder="https://example.com">
+                <button id="add-resource"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <div class="resources-grid" id="resources-container"></div>
+        </section>
+
+        <section id="contacts">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3><i class="fas fa-headset"></i> Support</h3>
+                    <p><i class="fas fa-envelope"></i> support@mymentor.pro</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3><i class="fas fa-code"></i> Developers</h3>
+                    <p><i class="fab fa-github"></i> github.com/mymentor</p>
+                    <p><i class="fab fa-twitter"></i> twitter.com/mymentor</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
